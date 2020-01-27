@@ -9,7 +9,7 @@ const bodyParser = express.json();
 bookmarkRouter
   .route('/bookmarks')
   .get((req, res)=>{
-    res.send(bookmarks)
+    res.json(bookmarks)
   })
   .post(bodyParser, (req,res)=>{
     const id = uuid();
@@ -46,7 +46,7 @@ bookmarkRouter
     bookmarks.push(bookmark);
     logger.info(`Bookmark with id ${id} created`);
 
-    res.status(201).location(`http://localhost:8080/bookmark/${id}`).send(bookmark)
+    res.status(201).location(`http://localhost:8080/bookmark/${id}`).json(bookmark)
   })
 
 bookmarkRouter 
@@ -61,7 +61,7 @@ bookmarkRouter
         .status(404)
         .send('Bookmark not found')
     }
-    res.send(bookmark)
+    res.json(bookmark)
   })
   .delete((req, res) => {
     const { id } = req.params;
