@@ -4,8 +4,11 @@ const morgan = require('morgan');
 const cors = require('cors');
 const helemt = require('helmet');
 const { NODE_ENV } = require('./config');
+const logger= require('./logger');
+const bookmarkRouter = require('./bookmarks/bookmarks');
 
 const app = express();
+
 
 const morganOption = NODE_ENV === 'production'
 ? 'tiny' : 'common';
@@ -13,10 +16,9 @@ const morganOption = NODE_ENV === 'production'
 app.use(morgan(morganOption));
 app.use(cors());
 app.use(helemt());
+app.use(express.json())
 
-app.get('/', (req, res, next)=>{
-  res.json({ message: 'Hello World' });
-});
+app.use(bookmarkRouter)
 
 app.use((error, req, res, next)=>{
   let response;
