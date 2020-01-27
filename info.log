@@ -1,3 +1,33 @@
 {"message":"Bookmark with id 123 not found","level":"error"}
 {"message":"Bookmark with id 123 not found","level":"error"}
 {"message":"Bookmark with id 120 not found","level":"error"}
+{"message":"Bookmark with id c0ec8efa-f154-458a-9885-6a3c7dc4dc02 created","level":"info"}
+{"message":"Description is required","level":"error"}
+{"message":"Bookmark with id ddeba11f-dd3a-47e7-a640-82c3b4b6604a created","level":"info"}
+{"message":"URL is required","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"Bookmark with id 8121f4f1-903a-4d8d-9e83-6b763647b392 created","level":"info"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Rating is required","level":"error"}
+{"message":"Bookmark with id 81e6988e-4016-4ac1-8264-83e064d1df58 created","level":"info"}
+{"message":"Bookmark with id 12e173e7-ebb8-4f81-905b-cd6a3a8a49ac created","level":"info"}
+{"message":"Rating is required","level":"error"}
+{"message":"Bookmark with id 52682800-4f84-48e4-907b-094d364740d8 created","level":"info"}
+{"message":"Bookmark with id 3f830652-802f-4856-941d-db4baccefec9 created","level":"info"}
+{"message":"Rating is required","level":"error"}
