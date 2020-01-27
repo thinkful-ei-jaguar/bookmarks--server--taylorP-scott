@@ -1,6 +1,6 @@
 const express = require('express')
 const logger = require('../logger')
-const {bookmarks} = require('../store')
+const { bookmarks } = require('../store')
 const uuid = require('uuid/v4')
 
 const bookmarkRouter = express.Router();
@@ -35,11 +35,6 @@ bookmarkRouter
       return res.status(400).send('Invalid Rating, must be a number less than 5')
     }
 
-    // if(isNaN(rating)) {
-    //   logger.error('Rating is required');
-    //   return res.status(400).send('Invalid Rating, must be a number less than 5')
-    // }
-
     const bookmark = {
       id,
       title,
@@ -58,7 +53,7 @@ bookmarkRouter
   .route('/bookmarks/:id')
   .get((req, res) => {
     const { id } = req.params;
-    const bookmark = bookmarks.find(book => book.id == id);
+    const bookmark = bookmarks.find(b => b.id == id);
 
     if(!bookmark){
       logger.error(`Bookmark with id ${id} not found`)
@@ -67,6 +62,20 @@ bookmarkRouter
         .send('Bookmark not found')
     }
     res.send(bookmark)
+  })
+  .delete((req, res) => {
+    const { id } = req.params;
+    const bookmarkIndex = bookmarks.findIndex(b => b.id == id);
+
+    if (bookmarkIndex === -1){
+      logger.error(`Bookmark with id ${id} not found`)
+      return res.status(400).send('Not found')
+    }
+
+    bookmarks.splice(bookmarkIndex, 1);
+    logger.info(`Bookmark with id ${id} deleted.`)
+
+    res.status(204).end();
   })
 
 

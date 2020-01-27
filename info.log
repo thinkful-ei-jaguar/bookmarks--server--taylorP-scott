@@ -31,3 +31,6 @@
 {"message":"Bookmark with id 52682800-4f84-48e4-907b-094d364740d8 created","level":"info"}
 {"message":"Bookmark with id 3f830652-802f-4856-941d-db4baccefec9 created","level":"info"}
 {"message":"Rating is required","level":"error"}
+{"message":"Bookmark with id 4f5f1098-e9fb-4610-99ab-648d4f8395e2 created","level":"info"}
+{"message":"Bookmark with id bfe5703d-5b81-45a8-91ca-7ba69e15744a created","level":"info"}
+{"message":"Bookmark with id bfe5703d-5b81-45a8-91ca-7ba69e15744a deleted.","level":"info"}
